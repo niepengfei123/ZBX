@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="食谱详情"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/img_user_center"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/left_back_2" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_cookbook"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="300"
+                fresco:failureImage="@mipmap/img_1"
+                fresco:failureImageScaleType="fitCenter"
+                fresco:placeholderImage="@mipmap/img_1"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:viewAspectRatio="1" />
+
+            <TextView
+                android:id="@+id/tv_cookbook_names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="鲫鱼"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableRight="@mipmap/open_2"
+                android:gravity="center"
+                android:text="食材"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16" />
+
+            <com.jy.jz.zbx.service.MyListView
+                android:id="@+id/my_lv_solid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null">
+
+            </com.jy.jz.zbx.service.MyListView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableRight="@mipmap/open_2"
+                android:gravity="center"
+                android:text="做法"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16" />
+
+            <com.jy.jz.zbx.service.MyListView
+                android:id="@+id/my_lv_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:divider="@null">
+
+            </com.jy.jz.zbx.service.MyListView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

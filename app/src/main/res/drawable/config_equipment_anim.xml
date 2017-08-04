@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list  
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:oneshot="false"  
+  >  
+    <item android:drawable="@drawable/v2_contentview_icon_connect1" android:duration="200"></item>  
+    <item android:drawable="@drawable/v2_contentview_icon_connect2" android:duration="200"></item>  
+    <item android:drawable="@drawable/v2_contentview_icon_connect3" android:duration="200"></item>  	
+</animation-list> 

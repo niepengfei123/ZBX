@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_seePhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="食材详情"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:id="@+id/img_user_center"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/left_back_2" />
+
+                <TextView
+                    android:id="@+id/tv_changes_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="修改"
+                    android:visibility="gone"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bottom_text_size_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/gray" />
+
+                <ImageView
+                    android:id="@+id/img_names_change"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/moren_2" />
+
+
+                <TextView
+                    android:id="@+id/tv_foods_names"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="鲫鱼"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_foods_w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/food_bng_2"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="食材重量/数量"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/bottom_text_size_14" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tv_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="g" />
+
+                <EditText
+                    android:id="@+id/ed_weight"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tv_11"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="5dp"
+                    android:text="250"
+                    android:inputType="number"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/bottom_text_size_14" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_foods_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/food_bng_2"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="储存方式"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/bottom_text_size_14" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="冷藏"
+                    android:textSize="@dimen/bottom_text_size_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_foods_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/food_bng_2"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="保鲜期"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/bottom_text_size_14" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/tv_shelf_life"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="7天"
+                    android:textSize="@dimen/bottom_text_size_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_foods_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@mipmap/food_bng_2"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="剩余保鲜期"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/bottom_text_size_14" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/gray" />
+
+                <EditText
+                    android:id="@+id/tv_surplus"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_12"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:text="6"
+                    android:inputType="number"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/bottom_text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+
+                    android:text="天"
+                    android:textSize="@dimen/bottom_text_size_14" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/food_bng_2"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="营养成分"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/bottom_text_size_14" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:text="？？"
+                        android:id="@+id/btn_heat"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/red_o_2"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_heat"
+                        android:layout_centerHorizontal="true"
+                        android:text="热量(kcal)" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_fat"
+                        android:layout_centerHorizontal="true"
+                        android:text="脂肪(g)" />
+
+                    <Button
+                        android:id="@+id/btn_fat"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:text="？？"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/red_o_1"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btn_sugar"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentTop="true"
+                        android:text="？？"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/yelloy_o_1"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_sugar"
+                        android:layout_centerHorizontal="true"
+                        android:text="糖类(g)" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btn_protein"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentTop="true"
+                        android:text="？？"
+                        android:layout_centerHorizontal="true"
+                        android:background="@mipmap/yelloy_o_2"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_protein"
+                        android:layout_centerHorizontal="true"
+                        android:text="蛋白质(g)" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/food_bng_2"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="食谱推荐"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/bottom_text_size_14" />
+
+            <com.jy.jz.zbx.service.MyGridView
+                android:id="@+id/my_lv_foods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="5dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp">
+
+            </com.jy.jz.zbx.service.MyGridView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

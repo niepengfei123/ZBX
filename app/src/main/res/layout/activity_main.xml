@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/top_title"
+        layout="@layout/title"
+        android:visibility="gone"></include>
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frameMenu"
+        android:layout_below="@+id/top_title"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <!-- 众酬课堂 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_public_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip">
+
+                <ImageView
+                    android:id="@+id/image_public_pay"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/tabbar_icon_publicpayfragment_select" />
+
+                <TextView
+                    android:id="@+id/tv_public_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_public_pay"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/tabbar_1_text"
+                    android:textColor="@drawable/tabbar_bottom_text_color"
+                    android:textSize="@dimen/text_size_12sp" />
+            </RelativeLayout>
+
+            <!-- 七嘴八舌 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_discussion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip">
+
+                <ImageView
+                    android:id="@+id/image_discussion"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/tabbar_icon_solid" />
+
+                <TextView
+                    android:id="@+id/tv_discussion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_discussion"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/tabbar_2_text"
+                    android:textColor="@drawable/tabbar_bottom_text_color"
+                    android:textSize="@dimen/text_size_12sp" />
+            </RelativeLayout>
+
+            <!-- 留白 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:visibility="gone"></RelativeLayout>
+
+            <!-- 主播老师 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_teacher_live_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip">
+
+                <ImageView
+                    android:id="@+id/image_teacher_live_radio"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/tabbar_icon_report" />
+
+                <TextView
+                    android:id="@+id/tv_teacher_live_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_teacher_live_radio"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/tabbar_3_text"
+                    android:textColor="@drawable/tabbar_bottom_text_color"
+                    android:textSize="@dimen/text_size_12sp" />
+            </RelativeLayout>
+
+            <!-- 共享超市 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_market"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dip"
+
+                android:paddingTop="5dip">
+
+                <ImageView
+                    android:id="@+id/image_market"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/tabbar_icon_market" />
+
+                <TextView
+                    android:id="@+id/tv_market"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_market"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/tabbar_5_text"
+                    android:textColor="@drawable/tabbar_bottom_text_color"
+                    android:textSize="@dimen/text_size_12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_open_courses"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip">
+
+                <ImageView
+                    android:id="@+id/image_open_courses"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/tabbar_icon_news" />
+
+                <TextView
+                    android:id="@+id/tv_open_courses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_open_courses"
+                    android:layout_centerInParent="true"
+                    android:text="@string/tabbar_4_text"
+                    android:textColor="@drawable/tabbar_bottom_text_color"
+                    android:textSize="@dimen/text_size_12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray"></LinearLayout>
+    </FrameLayout>
+
+    <!-- 中间按钮背景 -->
+
+    <FrameLayout
+        android:id="@+id/frameMenu_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/toggle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/tabbar_btn" />
+
+        <!-- 中间按钮 -->
+
+        <ImageView
+            android:id="@+id/plus_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/tabbar_icon_more_select" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f6f2"
+ >
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/img_back_take"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/left_back_2" />
+        <TextView
+            android:id="@+id/tv_ai_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="识别结果"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="24sp"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/green_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/text_size_16"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:id="@+id/equi_add_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 时间轴 开始 -->
+
+            <ImageView
+                android:id="@+id/step_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/jieduan1" />
+            <!-- 第一步 -->
+
+            <LinearLayout
+                android:id="@+id/ll_first_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step_line"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/first_step_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="如果Wi-Fi指示灯长亮，请点击这里"
+                    android:textColor="#656565"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/first_step_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left"
+                    android:text="如果Wi-Fi指示灯不亮，请长按Wi-Fi按键2秒以上，使指示灯快闪"
+                    android:textColor="#656565"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/first_step_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/hurom_p_link" />
+
+                <TextView
+                    android:id="@+id/first_step_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="为保证绑定过程的顺利进行\n请把设备尽可能靠近路由器"
+                    android:textColor="#5e605f"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <!-- 第二步 -->
+
+            <LinearLayout
+                android:id="@+id/ll_second_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_first_step"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/content_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_raund_bg"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp" >
+
+                        <TextView
+                            android:id="@+id/wifi_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="Wi-Fi"
+                            android:textColor="#565656"
+                            android:width="40dp" />
+
+                        <ImageView
+                            android:id="@+id/wifi_name_lin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/wifi_name_tv"
+                            android:background="@drawable/vertical_line" />
+
+                        <EditText
+                            android:id="@+id/wifi_name_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/wifi_name_lin"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:hint="请打开Wi-Fi"
+                            android:singleLine="true"
+                            android:textColor="#ff5828"
+                            android:textSize="15dp"
+                            android:width="200dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/vertical_line" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp" >
+
+                        <TextView
+                            android:id="@+id/wifi_pwd_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="密码"
+                            android:textColor="#565656"
+                            android:width="40dp" />
+
+                        <ImageView
+                            android:id="@+id/wifi_pwd_lin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/wifi_pwd_tv"
+                            android:background="@drawable/vertical_line" />
+
+                        <EditText
+                            android:id="@+id/wifi_pwd_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/wifi_pwd_lin"
+                            android:background="@null"
+                            android:hint="请输Wi-Fi密码"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="15dp"
+                            android:width="200dp" />
+
+                        <ImageView
+                            android:id="@+id/wifi_pwd_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dip"
+                            android:layout_toRightOf="@id/wifi_pwd_edit"
+                            android:src="@drawable/v2_contentview_icon_eyes_close" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#f2f2f2" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/second_step_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:gravity="left"
+                    android:text="为了保证您可以顺利连接网络，请连接2.4G频段的Wi-Fi网络，不要使用5G的Wi-Fi网络和公用网络"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </LinearLayout>
+            <!-- 第三步 -->
+
+            <LinearLayout
+                android:id="@+id/ll_third_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_second_step"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp" >
+
+                    <ImageView
+                        android:id="@+id/third_step_img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40dip"
+                        android:layout_toLeftOf="@+id/third_step_img2"
+                        android:src="@drawable/v2_contentview_icon_bean" />
+
+                    <ImageView
+                        android:id="@+id/third_step_img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/v2_contentview_icon_connect1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dip"
+                        android:layout_toRightOf="@+id/third_step_img2"
+                        android:src="@drawable/v2_contentview_icon_machine" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_third_step_config"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/third_step_bottom_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="玩命连接中···"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/third_step_bottom_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:text="32%"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                    <ProgressBar
+                        android:id="@+id/config_progress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:max="30"
+                        android:maxHeight="3dip"
+                        android:minHeight="1dip"
+                        android:progress="10"
+                        android:progressDrawable="@drawable/bg_seekbar" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_third_step_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/third_step_find_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="40dp"
+                        android:text="还未发现设备"
+                        android:textColor="#757171"
+                        android:textSize="16sp"
+                         />
+
+                    <View
+                        android:id="@+id/v_third_step_find_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="20dip"
+                        android:background="#c7c7c7" />
+
+                    <com.jy.jz.zbx.dms.MyListView
+                        android:id="@+id/find_equi_lv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:cacheColorHint="#ffffff"
+                        android:divider="@null"
+                        android:focusable="false"
+                        android:scrollbars="none"
+                        android:stackFromBottom="true"
+                        android:transcriptMode="alwaysScroll" >
+                    </com.jy.jz.zbx.dms.MyListView>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 第四步 -->
+
+            <LinearLayout
+                android:id="@+id/ll_fourth_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_third_step"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/fourth_step_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/ic_t3_alert_face" />
+
+                <TextView
+                    android:id="@+id/fourth_step_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:text="恭喜您，设备添加成功"
+                    android:textColor="#858585"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/fourth_text_devname"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/login_raund_bg"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:hint="给设备取一个好听的名字吧"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#c8c8c8"
+                    android:textSize="15sp"
+                    android:width="120dp" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/finish"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/v2_contentview_icon_button_icon"
+                    android:gravity="center"
+                    android:text="完成"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!-- 第五步 -->
+
+            <LinearLayout
+                android:id="@+id/ll_five_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_fourth_step"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/five_step_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/v2_contentview_image_cartoon" />
+
+                <TextView
+                    android:id="@+id/five_text_img_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="0.2dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="很遗憾，设备Wi-Fi连接失败！您可能出现以下情况"
+                    android:textColor="#858585"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/v2_contentview_frame"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/five_text_failed_lable1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:lineSpacingExtra="0.5dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:text="1.设备Wi-Fi指示灯未进入配网状态"
+                        android:textColor="#858585"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/five_text_failed_lable2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="3dp"
+                        android:lineSpacingExtra="0.5dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:text="2.您输入的Wi-Fi帐号密码有误"
+                        android:textColor="#858585"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/five_text_failed_lable3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="3dp"
+                        android:lineSpacingExtra="0.5dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:text="3.如果您使用的是双频路由器，请将路由器切换到2.4频段"
+                        android:textColor="#858585"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/five_text_failed_lable4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="3dp"
+                        android:lineSpacingExtra="0.5dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:text="4.您的路由器Wi-Fi信号弱或连接设备过多可能导致配置失败"
+                        android:textColor="#858585"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/try_aging"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/v2_contentview_icon_button_icon"
+                    android:gravity="center"
+                    android:text="重试"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/customer_service"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/v2_contentview_icon_button_icon"
+                    android:gravity="center"
+                    android:text="客服"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c7c7c7" />
+
+        <LinearLayout
+            android:id="@+id/cancel_ok_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="说明书"
+                android:textColor="#ff5828"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#c7c7c7" />
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="#ff5828"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

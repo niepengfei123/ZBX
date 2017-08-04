@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/img_user_back"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/left_back_2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智能厨房"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_16"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            fresco:actualImageScaleType="fitCenter"
+            fresco:fadeDuration="300"
+            fresco:failureImage="@mipmap/banner_kitchen"
+            fresco:failureImageScaleType="fitCenter"
+            fresco:placeholderImage="@mipmap/banner_kitchen"
+            fresco:placeholderImageScaleType="focusCrop"
+            fresco:viewAspectRatio="1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/img_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+
+                android:src="@mipmap/dummy_device_soyabean" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_1"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/img_1"
+                android:src="@mipmap/dummy_device_cooker" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/contentview_image_cartton"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="小阳提醒您，您还未添加设备!"
+        android:padding="10dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_take_photo"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="发现设备"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/bottom_text_size_14"
+        android:textColor="@color/white"
+        android:background="@drawable/v2_contentview_icon_button_icon"/>
+</LinearLayout>

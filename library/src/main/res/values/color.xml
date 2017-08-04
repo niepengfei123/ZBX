@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <color name="brownish_black">#424242</color>
+    <color name="Pink">#ff6445</color>
+    <color name="gold">#fdbc2f</color>
+    <color name="lightblack">#ff202020</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Red">#FF0000</color>
+    <color name="DarkRed">#aa1313</color>
+    <color name="Black">#000000</color>
+    <color name="Blue">#1c4773</color>
+    <color name="blue">#5BA7DC</color>
+    <color name="Green">#037c22</color>
+    <color name="titel_text_color">#555555</color>
+    <color name="green">#ff00ff00</color>
+    <color name="Yellow">#ffff00</color>
+    <color name="Gray">#999999</color>
+    <color name="GrayTwo">#aaaaaa</color>
+    <color name="orange">#FF7C08</color>
+    <color name="transparent">#00000000</color>
+    <color name="footerbac">#ffffff</color>
+    <color name="font_net_menu_color">#666600</color>
+    <color name="Gray_footertext">#8c827d</color>
+    <color name="siding_bcolor">#F8E7D3</color>
+    <color name="search_key_color">#E3D8C6</color>
+    <color name="about_text2">#64554e</color>
+    <color name="version_text">#837872</color>
+    <color name="lightgary">#f3f3f3</color>
+    <!-- 淡灰色 -->
+    <color name="lightgreen">#00b862</color>
+    <!-- 淡绿色 -->
+
+    <color name="btn_bg">#f6812d</color>
+    <!-- drop down list header font color -->
+    <color name="drop_down_list_header_font_color">#000000</color>
+    <!-- drop down list header second font color -->
+    <color name="drop_down_list_header_second_font_color">#000000</color>
+    <!-- drop down list footer font color -->
+    <color name="drop_down_list_footer_font_color">#000000</color>
+    <color name="main_blue_style">#61cffc</color>
+    <color name="jingshui_app_fonts_color">#5e5e5e</color>
+    <color name="blue_lv_color">#42BDE9</color>
+    <color name="red_lv_color">#EB6876</color>
+    <color name="orange_lv_color">#A1B752</color>
+    <color name="bottom_font_color">#808080</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="menu_bg">#101F2D</color>
+    <color name="light_gray">#AA808080</color>
+    <color name="gray">#dddddd</color>
+    <color name="tab_bg">#142029</color>
+    <color name="bg_light_blue">#EBF5FF</color>
+    <color name="light_black">#CC000000</color>
+    <color name="light_black_AA">#AA000000</color>
+    <color name="light_black_">#33000000</color>
+    <color name="light_white_">#33FFFFFF</color>
+    <color name="dialog_bg">#f0f0f0</color>
+
+    <drawable name="light_black_">#33000000</drawable>
+
+    <!-- 高飞 二维码扫描 -->
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <!-- 高飞 二维码扫描 end -->
+    <color name="v1_text_color">#777777</color>
+    <color name="yzm_color">#00b862</color>
+    <!-- dzj v1版黄色风格 -->
+    <color name="v1_style_yellow">#F7BB2C</color>
+
+    <!-- 原汁机 -->
+    <color name="progress_gray">#D8D8D8</color>
+    <color name="progress_gray_dark">#FF383838</color>
+    <color name="red">#ffe2231a</color>
+    <color name="dark_red">#ff510209</color>
+    <color name="hurom_make_text_color">#666666</color>
+    <color name="hurom_make_yellow">#fd9c2d</color>
+    <color name="dilog_text_color">#333333</color>
+    <color name="dilg_lin_color">#e9e9e9</color>
+    <color name="dilg_btn_text_color">#F26c00</color>
+    <color name="dilg_err_msg_color">#333333</color>
+    <color name="index_menu_color">#6a6a6a</color>
+    <!-- 原汁机 -->
+
+
+    <!-- 压力煲start -->
+    <color name="cooker_home_title_color">#555555</color>
+    <color name="cooker_home_left_textclor">#FF8F1B</color>
+    <color name="cooker_orange">#FD803E</color>
+    <color name="cooker_gray">#626262</color>
+    <color name="cooker_withe">#FFFFFF</color>
+    <color name="cooker_barbg">#ECECEC</color>
+    <color name="cooker_progress_gray">#FFD8D8D8</color>
+    <color name="cooker_progress_gray_dark">#FF383838</color>
+    <color name="cooker_red">#ffe2231a</color>
+    <color name="cooker_dark_red">#ff510209</color>
+    <color name="holo_orange_custom">#fffe870b</color>
+    <!-- 压力煲end -->
+
+    <color name="default_bg">#fcfcfc</color>
+    <color name="tint_color">#555555</color>
+    <color name="c8">#c8c8c8</color>
+    <color name="m67">#676767</color>
+    <color name="ec">#ececec</color>
+    <color name="select_color">#ff9041</color>
+    <color name="text_corolor">#555555</color>
+    <color name="m45">#454545</color>
+    <color name="da">#DADADA</color>
+    <color name="fd9c2d">#fd9c2d</color>
+    <color name="m97">#979797</color>
+    <color name="f0">#f0f0f0</color>
+
+    <!-- G3 P3 Q1 -->
+    <color name="bg_color">#f1f1f1</color>
+    <color name="title_color">#424242</color>
+    <color name="text_color">#000000</color>
+    <color name="text_hour_color">#fc6f47</color>
+    <color name="text_prompt_color">#fc6f47</color>
+    <color name="text_working_color">#ff6d55</color>
+    <!-- G3 P3 Q1 end -->
+    <!-- Y18 -->
+    <color name="text_A4">#A4A4A4</color>
+    <color name="hit_color">#FD6D3B</color>
+    <color name="color58">#585858</color>
+    <color name="diloghitcolor">#5b5b5b</color>
+    <color name="dilogparmbg">#f6f6f6</color>
+    <color name="dilog_p_bg">#88000000</color>
+    <color name="app_select_color">#fe6437</color>
+    <color name="pb_text_corlor">#ff5d2e</color>
+    <color name="dilog_titel_hit_color">#858585</color>
+    <color name="colorf5">#5b5b5b</color>
+    <color name="diy_bg">#f5f5f5 </color>
+    <color name="color86">#868686</color>
+    <color name="color8b">#8b8b8b</color>
+    <color name="diy_log_text_corlor">#ff5828</color>
+    <color name="y18oroven_title_selected">#F5F5F5</color>
+    <color name="m99">#999999</color>
+    <color name="diy_select_title_corlor">#fd6f40</color>
+
+    <!-- 烤箱start -->
+    <color name="tosater_progress_gray">#ffececec</color>
+    <color name="tosater_holo_custom">#ffff6234</color>
+    <color name="tosater_bottomtext_color">#ffc8c8c8</color>
+    <!-- 烤箱end -->
+
+    <!-- ET05 -->
+<!--    <color name="ewh_orange_start">#e64e4f</color>
+    <color name="ewh_orange_end">#f27757</color>   -->
+    <color name="ewh_orange_start">#FF04BEF1</color>
+    <color name="ewh_orange_end">#FF94DFF3</color>
+    <color name="ewh_gray">#e0e0e0</color>
+    <color name="ewh_deep_gray">#f2f2f2</color>
+    <color name="ewh_light_gray">#f9f9f9</color>
+    <color name="ewh_blue_text">#FF04BEF1</color>
+    <color name="ewh_orange_text">#fe6437</color>
+    <color name="ewh_bootom_text">#6a6a6a</color>s
+    <color name="ewh_gray_text">#e0e0e0</color>
+    <color name="ewh_pop_text_off">#A1A1A1</color>
+    <color name="ewh_corner_mark_gray_text">#CBCBCB</color>
+    <color name="tv_gray">#818181</color>
+</resources>

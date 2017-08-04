@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ZBX</string>
+    <string name="tabbar_1_text">我的冰箱</string>
+    <string name="tabbar_2_text">食谱</string>
+    <string name="tabbar_3_text">食材报表</string>
+    <string name="tabbar_4_text">消息</string>
+    <string name="tabbar_5_text">共享超市</string>
+    <string name="dialog_title">弹框标题</string>
+    <string name="dialog_btn_cancel">取消</string>
+    <string name="dialog_btn_confirm">确认</string>
+    <string name="dialog_btn_ikown">我知道了</string>
+    <string name="fifth_text_1">饮料零食</string>
+    <string name="fifth_text_2">蔬菜水果</string>
+    <string name="fifth_text_3">冷冻食品/肉类</string>
+    <string name="fifth_text_4">调味品/小菜/酱油</string>
+    <string name="fifth_text_tv">>>更多</string>
+
+    <!--登录注册-->
+    <string name="login_username">手&#160;&#160;机&#160;&#160;号</string>
+    <string name="login_username_hint">请输入手机号</string>
+    <string name="login_password">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_btn">登录</string>
+    <string name="regist_btn">注册</string>
+    <string name="regist_captcha">验&#160;&#160;证&#160;&#160;码</string>
+    <string name="regist_captcha_hint">请输入验证码</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="confirm_password_hint">请再次输入密码</string>
+    <string name="other_login">第三方登录</string>
+</resources>

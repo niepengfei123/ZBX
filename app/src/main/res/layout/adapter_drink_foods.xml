@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_market"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:fadeDuration="300"
+        fresco:failureImageScaleType="fitCenter"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:viewAspectRatio="1" />
+
+    <TextView
+        android:id="@+id/tv_foods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="nnn"
+        android:textColor="@color/black"
+        android:textSize="@dimen/bottom_text_size_14" />
+
+    <TextView
+        android:id="@+id/tv_foods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="nnn"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_13sp" />
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="nnn"
+        android:textColor="@color/yellow_1"
+        android:textSize="@dimen/text_size_12sp" />
+</LinearLayout>
