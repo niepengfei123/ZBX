@@ -222,6 +222,8 @@ public class FirstFragment extends Fragment implements View.OnClickListener {
                 prlv_min.getLoadingLayoutProxy().setReleaseLabel("开始加载");
                 refreshView.getLoadingLayoutProxy().setLastUpdatedLabel("最后加载时间:" + times);
 
+
+
                 refresh = 2;
                 getTwoImg();
             }
